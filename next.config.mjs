@@ -22,9 +22,6 @@ const nextConfig = {
     ],
   },
   compress: true,
-  experimental: {
-    optimizePackageImports: ["framer-motion"],
-  },
 };
 
 export default nextConfig;

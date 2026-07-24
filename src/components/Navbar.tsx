@@ -436,7 +436,7 @@ export default function Navbar() {
                   link.subLinks ? (
                     link.subLinks.slice(0, 7).map((sub) => {
                       const slug = sub.path.replace("/category/", "").toLowerCase();
-                      const isEmpty = emptyCategorySlugs.includes(slug);
+                      const isEmpty = false; // Show all categories even if empty
                       return isEmpty ? null : (
                         <Link
                           key={sub.name}
@@ -517,7 +517,7 @@ export default function Navbar() {
                         <div className="flex flex-col gap-2.5 pl-2 border-l border-primary/10">
                           {link.subLinks.map((sub) => {
                             const slug = sub.path.replace("/category/", "").toLowerCase();
-                            const isEmpty = emptyCategorySlugs.includes(slug);
+                            const isEmpty = false; // Show all categories even if empty
                             return isEmpty ? (
                               <div key={sub.name} className="flex items-center justify-between text-text-muted/50 cursor-not-allowed py-1 text-xs">
                                 <span className="font-semibold">{sub.name}</span>
