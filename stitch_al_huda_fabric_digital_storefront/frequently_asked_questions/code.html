@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | Al-Huda Fabric</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#1b1c1a",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#848481",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "primary": "#000000",
+                        "on-surface-variant": "#444748",
+                        "on-primary-container": "#858383",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c8c6c4",
+                        "tertiary-fixed": "#e4e2df",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-container": "#785a04",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "surface-tint": "#5f5e5e",
+                        "surface": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#1c1b1b",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "secondary-fixed": "#ffdf9c",
+                        "primary-container": "#1c1b1b",
+                        "secondary-fixed-dim": "#e9c167",
+                        "on-secondary-fixed": "#251a00",
+                        "secondary-container": "#fed578",
+                        "secondary": "#785a03",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "section-gap-lg": "120px",
+                        "margin-desktop": "60px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "4px",
+                        "section-gap-sm": "60px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "label-caps": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "display-lg": ["EB Garamond"],
+                        "button": ["Montserrat"],
+                        "headline-sm": ["EB Garamond"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "button": ["13px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            padding-bottom: 24px;
+        }
+        .accordion-item.active .icon-rotate {
+            transform: rotate(180deg);
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 30px -15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-lowest top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center">
+<h1 class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-primary">Al-Huda Fabric</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Unstitched</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Ready-To-Wear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Bridal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Luxury Pret</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Sale</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="relative hidden lg:block">
+<input class="border-b border-outline-variant bg-transparent py-1 pr-8 focus:outline-none focus:border-primary font-body-md text-sm w-48 transition-all duration-300 focus:w-64" placeholder="Search our collections..." type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-1 text-on-surface-variant">search</span>
+</div>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="favorite">favorite</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="person">person</span>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-section-gap-sm md:py-section-gap-lg">
+<!-- Hero Section -->
+<section class="mb-section-gap-sm text-center md:text-left md:flex items-end justify-between border-b border-outline-variant pb-8">
+<div class="max-w-2xl">
+<h2 class="font-display-lg text-display-lg mb-4">Customer Care &amp; Support</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Find answers to common questions about our heritage fabrics, shipping timelines, and artisanal tailoring services.</p>
+</div>
+<div class="mt-8 md:mt-0">
+<div class="relative group">
+<input class="w-full md:w-80 border-outline border bg-white px-6 py-4 rounded-none focus:ring-1 focus:ring-primary focus:border-primary outline-none font-body-md transition-all" id="faqSearch" placeholder="Search your question..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-4 text-outline group-focus-within:text-primary" data-icon="search">search</span>
+</div>
+</div>
+</section>
+<!-- FAQ Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Category Sidebar -->
+<aside class="lg:col-span-3 space-y-4 mb-8 lg:mb-0">
+<h3 class="font-label-caps text-label-caps mb-6 text-outline">Categories</h3>
+<nav class="flex flex-col space-y-2">
+<button class="text-left py-3 px-4 bg-white border border-transparent hover:border-outline-variant active:bg-surface-container-low transition-all flex justify-between items-center group category-btn active-category" id="btn-shipping" onclick="filterCategory('shipping')">
+<span class="font-label-caps text-label-caps">Shipping</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="text-left py-3 px-4 bg-white border border-transparent hover:border-outline-variant active:bg-surface-container-low transition-all flex justify-between items-center group category-btn" id="btn-returns" onclick="filterCategory('returns')">
+<span class="font-label-caps text-label-caps">Returns &amp; Exchanges</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="text-left py-3 px-4 bg-white border border-transparent hover:border-outline-variant active:bg-surface-container-low transition-all flex justify-between items-center group category-btn" id="btn-sizing" onclick="filterCategory('sizing')">
+<span class="font-label-caps text-label-caps">Sizing &amp; Fit</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="text-left py-3 px-4 bg-white border border-transparent hover:border-outline-variant active:bg-surface-container-low transition-all flex justify-between items-center group category-btn" id="btn-custom" onclick="filterCategory('custom')">
+<span class="font-label-caps text-label-caps">Custom Orders</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+</nav>
+<!-- Help Card -->
+<div class="mt-12 p-8 bg-surface-container-low editorial-shadow border-t-4 border-primary">
+<h4 class="font-headline-sm text-headline-sm mb-4">Still have questions?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Our dedicated concierge team is available Monday to Saturday, 9 AM to 6 PM (PST).</p>
+<a class="inline-block bg-primary text-on-primary font-button text-button px-8 py-4 w-full text-center hover:opacity-90 transition-opacity uppercase tracking-widest" href="#">Contact Support</a>
+</div>
+</aside>
+<!-- Main Accordion List -->
+<div class="lg:col-span-9">
+<!-- Shipping Category -->
+<div class="faq-section space-y-4" id="section-shipping">
+<h3 class="font-headline-md text-headline-md mb-8 border-l-4 border-primary pl-4">Shipping Information</h3>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">What are the international shipping rates?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                We offer global shipping to over 150 countries. Shipping costs are calculated at checkout based on the weight of the parcel and the destination. For orders over $300, we offer complimentary international shipping via DHL Express.
+                            </p>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">How long does local delivery take in Pakistan?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                Standard delivery within Pakistan takes 3-5 business days for major cities (Karachi, Lahore, Islamabad). Remote areas may take up to 7 business days. During sale periods or new collection launches, processing may take an additional 2-3 days.
+                            </p>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">Can I track my order in real-time?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                Yes. Once your order is dispatched, you will receive an SMS and email with a unique tracking number and a link to the courier's portal. You can also view status updates in your "Order History" under the profile section.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Returns Category (Initially Hidden) -->
+<div class="faq-section space-y-4 hidden" id="section-returns">
+<h3 class="font-headline-md text-headline-md mb-8 border-l-4 border-primary pl-4">Returns &amp; Exchanges</h3>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">What is your exchange policy?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                We accept exchanges within 14 days of delivery if the item is in its original, unworn condition with all tags intact. Please note that sale items and customized stitched outfits are non-exchangeable unless there is a manufacturing defect.
+                            </p>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">Are return shipping costs covered?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                For exchanges due to preference, the customer is responsible for shipping costs. If you received a damaged or incorrect item, Al-Huda Fabric will cover all courier expenses to facilitate the return and replacement.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Sizing Category (Initially Hidden) -->
+<div class="faq-section space-y-4 hidden" id="section-sizing">
+<h3 class="font-headline-md text-headline-md mb-8 border-l-4 border-primary pl-4">Sizing &amp; Fit Guide</h3>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">How do I find my size for Ready-to-Wear?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+<p class="mb-4">Our sizing follows international standards but with a tailored fit. We provide a detailed measurement chart on every product page. Key measurements to check are:</p>
+<ul class="list-disc pl-5 space-y-2">
+<li>Chest/Bust across the fullest part</li>
+<li>Shoulder width from bone to bone</li>
+<li>Kameez length from shoulder to hem</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Custom Orders Category (Initially Hidden) -->
+<div class="faq-section space-y-4 hidden" id="section-custom">
+<h3 class="font-headline-md text-headline-md mb-8 border-l-4 border-primary pl-4">Custom Orders</h3>
+<div class="accordion-item border-b border-outline-variant group">
+<button class="w-full flex justify-between items-center py-6 text-left group-hover:text-primary transition-colors" onclick="toggleAccordion(this)">
+<span class="font-body-lg text-body-lg font-medium">Do you offer custom tailoring for unstitched fabric?</span>
+<span class="material-symbols-outlined icon-rotate transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="font-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                                Yes, we offer premium "Stitched to Order" services. You can select standard sizes (XS-XL) or provide your custom measurements. Please allow an additional 10-14 business days for artisanal tailoring before dispatch.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image Section (Asymmetric) -->
+<section class="mt-section-gap-lg grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative h-[500px] overflow-hidden group">
+<img alt="Detailed silk fabric texture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A macro close-up photograph of premium emerald green silk fabric with intricate golden Zari embroidery. The lighting is soft and warm, highlighting the tactile texture and reflective sheen of the artisanal threadwork. The composition is artistic and minimalist, evoking a sense of heritage and luxury craftsmanship in a high-fashion editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwIs7HS3XKyblPmAVpMD6a8U0jcgiXAhiXGbyNKUH7fT1Wfh9hK5tbemFUjtY43_lt_RjYDhHrH56irdRv6eQFIHskahj2nqRura4RSE7AlBI95PlxF5Li2PKkfWewxYas_ymWonxf0DqQuq3XXGDqwpjWMP4vKcCleXEhwAgRY1IATYQTq44TI0iktIMFrdezvLbdMdWd7pdLKYYeAXuhUwt1hyLERd3K9IGcvucUPnLmPrC6cNfnG5pytwp1UXClk2pmcf6244o"/>
+</div>
+<div class="p-8 md:p-12 lg:p-20 bg-surface-container-highest">
+<h4 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Our Commitment</h4>
+<p class="font-body-lg text-body-lg mb-8 italic">"We believe in the timeless elegance of Pakistani textiles, ensuring every thread tells a story of heritage and quality."</p>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="verified">verified</span>
+<div>
+<p class="font-label-caps text-label-caps">Authenticity Guaranteed</p>
+<p class="font-body-md text-on-surface-variant">100% Pure Fabric Sources</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container mt-section-gap-lg border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-sm max-w-container-max mx-auto">
+<div class="space-y-6">
+<h1 class="font-display-lg text-display-lg text-primary dark:text-primary">Al-Huda</h1>
+<p class="font-body-md text-on-surface-variant">Luxury textiles and unstitched collections defined by timeless elegance and artisanal heritage.</p>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Quick Links</h5>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Shipping Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Social Presence</h5>
+<div class="flex space-x-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="camera">camera</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Newsletter</h5>
+<p class="font-body-md text-on-surface-variant mb-4">Subscribe for exclusive access to new launches.</p>
+<div class="flex">
+<input class="bg-transparent border-b border-outline-variant py-2 flex-grow focus:outline-none focus:border-primary font-body-md" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 font-button text-xs uppercase tracking-tighter">Join</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant">© 2024 AL-HUDA FABRIC. ALL RIGHTS RESERVED.</p>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-outline" data-icon="payments">payments</span>
+<span class="material-symbols-outlined text-outline" data-icon="local_shipping">local_shipping</span>
+</div>
+</div>
+</footer>
+<script>
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            // Toggle current
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        function filterCategory(category) {
+            // Hide all sections
+            document.querySelectorAll('.faq-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show selected section
+            const selectedSection = document.getElementById('section-' + category);
+            if (selectedSection) {
+                selectedSection.classList.remove('hidden');
+            }
+
+            // Update sidebar styles
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('border-primary', 'bg-surface-container-low');
+                btn.classList.add('border-transparent');
+            });
+            const activeBtn = document.getElementById('btn-' + category);
+            activeBtn.classList.remove('border-transparent');
+            activeBtn.classList.add('border-primary', 'bg-surface-container-low');
+        }
+
+        // Search functionality
+        document.getElementById('faqSearch').addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            const accordions = document.querySelectorAll('.accordion-item');
+            
+            accordions.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                if (text.includes(term)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // If searching, show all sections to search globally
+            if (term.length > 0) {
+                document.querySelectorAll('.faq-section').forEach(section => {
+                    section.classList.remove('hidden');
+                });
+            } else {
+                // If cleared, go back to shipping or currently active category
+                filterCategory('shipping');
+            }
+        });
+
+        // Initialize first category
+        window.onload = () => filterCategory('shipping');
+    </script>
+</body></html>

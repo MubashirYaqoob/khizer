@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        input:focus, select:focus {
+            outline: none !important;
+            border-color: #000000 !important;
+            ring: 0 !important;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#1b1c1a",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#848481",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "primary": "#000000",
+                        "on-surface-variant": "#444748",
+                        "on-primary-container": "#858383",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c8c6c4",
+                        "tertiary-fixed": "#e4e2df",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-container": "#785a04",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "surface-tint": "#5f5e5e",
+                        "surface": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#1c1b1b",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "secondary-fixed": "#ffdf9c",
+                        "primary-container": "#1c1b1b",
+                        "secondary-fixed-dim": "#e9c167",
+                        "on-secondary-fixed": "#251a00",
+                        "secondary-container": "#fed578",
+                        "secondary": "#785a03",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "section-gap-lg": "120px",
+                        "margin-desktop": "60px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "4px",
+                        "section-gap-sm": "60px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-sm": ["EB Garamond"],
+                        "label-caps": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "button": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "button": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container">
+<!-- TopNavBar - Rendered based on JSON guidance -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex-1 hidden md:flex gap-8">
+<nav class="flex gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Unstitched</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Ready-To-Wear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Bridal</a>
+</nav>
+</div>
+<div class="flex-none">
+<h1 class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-primary cursor-pointer">Al-Huda Fabric</h1>
+</div>
+<div class="flex-1 flex justify-end items-center gap-6">
+<div class="hidden md:flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">favorite</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">person</span>
+<div class="relative cursor-pointer group">
+<span class="material-symbols-outlined hover:text-primary transition-all">shopping_bag</span>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</div>
+</div>
+<span class="md:hidden material-symbols-outlined">menu</span>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap-sm">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Checkout</h2>
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-caps text-[10px]">
+<a class="hover:text-primary transition-colors" href="#">Cart</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary font-bold">Information</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Shipping</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Payment</span>
+</nav>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Column: Shipping Info -->
+<div class="lg:col-span-7 space-y-12">
+<section>
+<div class="flex justify-between items-end mb-6">
+<h3 class="font-headline-sm text-headline-sm">Contact Information</h3>
+<p class="font-body-md text-on-surface-variant">Already have an account? <a class="text-primary underline" href="#">Log in</a></p>
+</div>
+<div class="space-y-4">
+<div class="relative group">
+<input class="peer w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:border-primary transition-all font-body-lg text-body-lg" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-caps text-label-caps transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" for="email">Email Address</label>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-headline-sm text-headline-sm mb-6">Shipping Address</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative md:col-span-2">
+<input class="peer w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:border-primary transition-all font-body-lg text-body-lg" id="fullname" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-caps text-label-caps transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" for="fullname">Full Name</label>
+</div>
+<div class="relative md:col-span-2">
+<input class="peer w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:border-primary transition-all font-body-lg text-body-lg" id="address" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-caps text-label-caps transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" for="address">Street Address</label>
+</div>
+<div class="relative">
+<select class="peer w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:border-primary transition-all font-body-lg text-body-lg appearance-none cursor-pointer" id="city">
+<option disabled="" selected="" value="">Select City</option>
+<option value="karachi">Karachi</option>
+<option value="lahore">Lahore</option>
+<option value="islamabad">Islamabad</option>
+<option value="faisalabad">Faisalabad</option>
+</select>
+<span class="absolute right-0 top-4 material-symbols-outlined pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<input class="peer w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:border-primary transition-all font-body-lg text-body-lg" id="phone" placeholder=" " type="tel"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-caps text-label-caps transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" for="phone">Phone Number</label>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-headline-sm text-headline-sm mb-6">Shipping Method</h3>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-4">
+<input checked="" class="w-4 h-4 text-primary focus:ring-0 border-outline" name="shipping" type="radio"/>
+<span class="font-body-md text-body-md">Standard Shipping (3-5 Days)</span>
+</div>
+<span class="font-label-caps text-label-caps">Rs. 250</span>
+</label>
+<label class="flex items-center justify-between p-4 border border-outline-variant cursor-pointer hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-4">
+<input class="w-4 h-4 text-primary focus:ring-0 border-outline" name="shipping" type="radio"/>
+<span class="font-body-md text-body-md">Express Delivery (Next Day)</span>
+</div>
+<span class="font-label-caps text-label-caps">Rs. 500</span>
+</label>
+</div>
+</section>
+<section>
+<h3 class="font-headline-sm text-headline-sm mb-6">Payment Method</h3>
+<div class="border border-outline-variant">
+<label class="flex items-center gap-4 p-5 border-b border-outline-variant bg-surface-container-lowest cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary focus:ring-0 border-outline" name="payment" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md">Cash on Delivery (COD)</span>
+<span class="text-[11px] text-on-surface-variant">Pay when your parcel arrives</span>
+</div>
+<span class="ml-auto material-symbols-outlined text-on-surface-variant">payments</span>
+</label>
+<label class="flex items-center gap-4 p-5 cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="w-4 h-4 text-primary focus:ring-0 border-outline" name="payment" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md">Online Payment</span>
+<span class="text-[11px] text-on-surface-variant">Credit/Debit Card, EasyPaisa, JazzCash</span>
+</div>
+<span class="ml-auto material-symbols-outlined text-on-surface-variant">credit_card</span>
+</label>
+</div>
+</section>
+<div class="hidden lg:flex items-center gap-8 py-8 border-t border-outline-variant">
+<div class="flex items-center gap-2 grayscale opacity-60">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+<span class="font-label-caps text-[10px]">SECURE SSL CHECKOUT</span>
+</div>
+<div class="flex items-center gap-2 grayscale opacity-60">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+<span class="font-label-caps text-[10px]">INSURED DELIVERY</span>
+</div>
+<div class="flex items-center gap-2 grayscale opacity-60">
+<span class="material-symbols-outlined text-2xl">history</span>
+<span class="font-label-caps text-[10px]">7-DAY RETURNS</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-5">
+<div class="sticky top-24 bg-surface-container-low p-8 border border-outline-variant/30">
+<h3 class="font-headline-sm text-headline-sm mb-8">Order Summary</h3>
+<div class="space-y-6 mb-8 max-h-[400px] overflow-y-auto pr-2 hide-scrollbar">
+<!-- Product Item 1 -->
+<div class="flex gap-4">
+<div class="relative w-24 h-32 bg-surface-container-high overflow-hidden flex-shrink-0">
+<img alt="Heritage Unstitched" class="w-full h-full object-cover grayscale-[0.2]" data-alt="Detailed close-up shot of a luxurious emerald green unstitched fabric with intricate gold embroidery. The fabric is draped elegantly over a minimalist wooden pedestal in a high-key studio setting. The lighting is soft and editorial, highlighting the rich textile texture and metallic sheen of the gold threads. The overall mood is sophisticated and culturally rich, emphasizing premium craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoDCUSlBi6tyeBfmhnFcvgUArMsqv3Vkk2EpQYoUIbTKvkAOKj7efaTnn8fyZQrMcE4Ddr9d2AfAb8SOB28FPfGoNgFOMGl9h5ChKbm5OxPMFqZnN820_ufHJGjb_NOCOOoi0MsvX2OHldf0Gy8QJwEczs_mbRXyTnAKmVbwN0suNW8o9Kg8F6Xz24dgrqg-e8dVygj-p9Aw6WxXoaqSsB-N4AQKtBKX4NZZD6h4xk7rYf67dSh-laeXokmlcwhIb26xWmQv0dYiQ"/>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<p class="font-label-caps text-label-caps text-[11px] mb-1">UNSTITCHED</p>
+<h4 class="font-body-lg text-body-lg font-medium leading-tight">Zari Embroidered Chiffon - Emerald</h4>
+<p class="text-[12px] text-on-surface-variant mt-1">Size: 3 Meters</p>
+</div>
+<p class="font-label-caps text-label-caps">Rs. 8,500</p>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="flex gap-4">
+<div class="relative w-24 h-32 bg-surface-container-high overflow-hidden flex-shrink-0">
+<img alt="Ready-To-Wear" class="w-full h-full object-cover grayscale-[0.2]" data-alt="A clean, minimalist editorial photograph of a crisp white cotton kurta with delicate tone-on-tone embroidery details on the collar. The garment is captured in a bright, modern studio with natural soft lighting that creates gentle shadows. The focus is on the fine quality of the cotton fabric and the precise tailoring. The aesthetic is calm, luxurious, and rooted in contemporary heritage fashion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbAuegV6-4VSvVjH-WTc3eko6zXAsGXE7ik52ta6iqq3Batn-A7MP7E96PvA2jt_JxT3lAdFDi5m3etSjUZ5XmGhAfSMeX6lsQB586-UvdSuwdqJNJ-TK_GfrfsBz17tx-MgQ7W-jYsEqyUIqD-I7h8BIFl5xFxSDJYJSHJmkVbMr1bXRfSnhheZ5M3LI2UTJ4mQR4orZo6Pz2LzeYJa3NPITLk_y9s1AI_8XGKcsln7TvLrWqnNYplhWb7XnX-JFCui1u-Wexsbk"/>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<p class="font-label-caps text-label-caps text-[11px] mb-1">READY-TO-WEAR</p>
+<h4 class="font-body-lg text-body-lg font-medium leading-tight">Classic White Cotton Kurta</h4>
+<p class="text-[12px] text-on-surface-variant mt-1">Size: Small</p>
+</div>
+<p class="font-label-caps text-label-caps">Rs. 4,200</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4 mb-8">
+<div class="flex-grow relative">
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-2 focus:border-primary transition-all font-label-caps text-[11px]" placeholder="Promo Code" type="text"/>
+</div>
+<button class="font-label-caps text-[11px] text-primary border border-primary px-6 py-2 hover:bg-primary hover:text-on-primary transition-all">APPLY</button>
+</div>
+<div class="space-y-4 border-t border-outline-variant pt-8 mb-8">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="font-medium">Rs. 12,700</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Shipping</span>
+<span class="font-medium">Rs. 250</span>
+</div>
+<div class="flex justify-between pt-4 border-t border-outline-variant/50">
+<span class="font-headline-sm text-headline-sm">Total</span>
+<div class="text-right">
+<p class="text-[10px] text-on-surface-variant mb-1 uppercase tracking-widest">PKR</p>
+<p class="font-headline-sm text-headline-sm">Rs. 12,950</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-button text-button py-5 uppercase tracking-[0.2em] hover:opacity-90 active:scale-[0.99] transition-all">
+                        Complete Order
+                    </button>
+<p class="text-[11px] text-on-surface-variant text-center mt-6">
+                        By completing your order, you agree to our <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer - Rendered based on JSON guidance -->
+<footer class="bg-surface-container dark:bg-surface-container border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-sm max-w-container-max mx-auto">
+<div class="md:col-span-1 space-y-6">
+<h2 class="font-display-lg text-display-lg text-primary">Al-Huda</h2>
+<p class="text-on-surface-variant text-body-md pr-8">Curating the finest fabrics and ready-to-wear essentials for the modern wardrobe, rooted in tradition.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary">CUSTOMER CARE</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Shipping Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary">QUICK LINKS</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Track Order</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Size Guide</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Our Story</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all underline decoration-transparent hover:decoration-primary" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary">NEWSLETTER</h4>
+<p class="text-[11px] text-on-surface-variant">Join our exclusive circle for early access and seasonal releases.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 font-label-caps text-[11px] focus:border-primary" placeholder="YOUR EMAIL" type="email"/>
+<button class="absolute right-0 top-2 font-label-caps text-[11px] text-primary">JOIN</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/10 max-w-container-max mx-auto text-center md:text-left">
+<p class="font-label-caps text-[10px] text-on-surface-variant">© 2024 AL-HUDA FABRIC. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for input fields
+        document.querySelectorAll('input, select').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.classList.add('border-primary');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.classList.remove('border-primary');
+            });
+        });
+
+        // Simple Payment Selection logic for styling
+        const paymentRadios = document.querySelectorAll('input[name="payment"]');
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                paymentRadios.forEach(r => {
+                    r.closest('label').classList.remove('bg-surface-container-lowest');
+                    r.closest('label').classList.add('bg-transparent');
+                });
+                if (radio.checked) {
+                    radio.closest('label').classList.add('bg-surface-container-lowest');
+                    radio.closest('label').classList.remove('bg-transparent');
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #FDFBF7;
+    --color-surface: #FAF8F5;
+    --color-gold: #B8962E;
+    --color-gold-light: #D4AF5A;
+    --color-black: #1A1A1A;
+    --color-text-muted: #6B6560;
+    --color-border: #E8E2D9;
+    
+    /* Legacy variables mapping for compatibility if needed */
+    --primary: var(--color-black);
+    --gold: var(--color-gold);
+    --cream: var(--color-surface);
+    --surface: var(--color-bg);
+    --white: #ffffff;
+    --outline: var(--color-border);
+    --text-muted: var(--color-text-muted);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-primary antialiased relative;
+  }
+
+  /* Subtle CSS grain texture overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  /* Typography utilities */
+  h1, .display-lg {
+    @apply text-4xl md:text-5xl lg:text-6xl font-garamond text-primary font-medium tracking-tight;
+  }
+  
+  h2, .headline-md {
+    @apply text-3xl md:text-4xl font-garamond text-primary font-medium;
+  }
+
+  h3, .headline-sm {
+    @apply text-2xl font-garamond text-primary font-medium;
+  }
+
+  p, .body-lg {
+    @apply text-base md:text-lg font-jost text-text-muted leading-relaxed;
+  }
+
+  .body-md {
+    @apply text-sm md:text-base font-jost text-text-muted leading-relaxed;
+  }
+
+  .label-caps {
+    @apply text-xs font-jost uppercase tracking-[0.15em] font-medium;
+  }
+}
+
+@layer components {
+  /* Thin gold decorative rule underneath sections/headings */
+  .gold-rule-bottom {
+    @apply relative pb-4;
+  }
+  .gold-rule-bottom::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[1px] bg-gold;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-primary text-white font-jost text-[11px] md:text-xs uppercase tracking-widest px-8 py-4 transition-all duration-500 relative overflow-hidden;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-gold shadow-[0_8px_20px_rgba(184,150,46,0.4)] -translate-y-[2px];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center border border-gold text-gold font-jost text-[11px] md:text-xs uppercase tracking-widest px-8 py-4 transition-all duration-500 relative overflow-hidden;
+  }
+  
+  .btn-outline:hover {
+    @apply bg-gold text-white shadow-[0_8px_20px_rgba(184,150,46,0.4)] -translate-y-[2px];
+  }
+
+  /* Shine effect */
+  .btn-primary::before, .btn-outline::before {
+    content: '';
+    @apply absolute top-0 -left-[100%] w-1/2 h-full bg-white/20 -skew-x-[20deg] transition-all duration-700 ease-in-out;
+  }
+  
+  .btn-primary:hover::before, .btn-outline:hover::before {
+    @apply left-[200%];
+  }
+  
+  /* Input fields */
+  .input-minimal {
+    @apply w-full bg-transparent border-b border-primary/20 py-3 font-jost text-base focus:outline-none focus:border-gold transition-colors;
+  }
+
+  /* Badges */
+  .badge-dark {
+    @apply bg-primary text-white text-xs font-jost tracking-widest uppercase px-3 py-1 inline-block rounded-full;
+  }
+  
+  .badge-gold {
+    @apply bg-gold text-white text-xs font-jost tracking-widest uppercase px-3 py-1 inline-block rounded-full;
+  }
+}
+
+/* ── Seamless marquee ── uses two identical copies so loop never resets visibly */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fadeUp {
+  0%   { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Shimmer skeleton ── */
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f0ece6 25%, #e8e2d9 50%, #f0ece6 75%);
+  background-size: 600px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+/* ── Fade-up reveal (CSS fallback if JS disabled) ── */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Scrollbar for a more premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
+
+/* Hide scrollbar for pills container but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

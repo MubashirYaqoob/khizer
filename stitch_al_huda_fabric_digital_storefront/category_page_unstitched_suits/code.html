@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Unstitched Collection | Al-Huda Fabric</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-container": "#1b1c1a",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474746",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#848481",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-low": "#f3f3f4",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-on-surface": "#f0f1f1",
+                    "error": "#ba1a1a",
+                    "primary": "#000000",
+                    "on-surface-variant": "#444748",
+                    "on-primary-container": "#858383",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c8c6c4",
+                    "tertiary-fixed": "#e4e2df",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2f3131",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-container": "#785a04",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "outline": "#747878",
+                    "outline-variant": "#c4c7c7",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#1b1c1a",
+                    "surface-tint": "#5f5e5e",
+                    "surface": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#1c1b1b",
+                    "tertiary": "#000000",
+                    "background": "#f9f9f9",
+                    "surface-dim": "#dadada",
+                    "surface-container": "#eeeeee",
+                    "on-tertiary-fixed-variant": "#474745",
+                    "secondary-fixed": "#ffdf9c",
+                    "primary-container": "#1c1b1b",
+                    "secondary-fixed-dim": "#e9c167",
+                    "on-secondary-fixed": "#251a00",
+                    "secondary-container": "#fed578",
+                    "secondary": "#785a03",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1440px",
+                    "section-gap-lg": "120px",
+                    "margin-desktop": "60px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "unit": "4px",
+                    "section-gap-sm": "60px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "label-caps": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "display-lg": ["EB Garamond"],
+                    "button": ["Montserrat"],
+                    "headline-sm": ["EB Garamond"],
+                    "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "button": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        font-size: 20px;
+      }
+      .product-card-hover:hover .product-action-bar {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        background: #000000;
+        cursor: pointer;
+        border-radius: 0;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-secondary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<h1 class="font-display-lg text-display-lg tracking-tighter text-primary">Al-Huda Fabric</h1>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Unstitched</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Ready-To-Wear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Bridal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Luxury Pret</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Sale</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-outline-variant pb-1">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32" placeholder="Search..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">favorite</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors relative">
+                    shopping_bag
+                    <span class="absolute -top-1 -right-1 bg-secondary text-[8px] text-white rounded-full w-3 h-3 flex items-center justify-center">0</span>
+</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">person</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-8">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center gap-2 font-label-caps text-[10px] tracking-widest text-on-surface-variant uppercase">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary font-semibold">Unstitched</span>
+</nav>
+<!-- Page Heading & Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-section-gap-sm gap-6">
+<div class="max-w-2xl">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Unstitched Collection</h2>
+<p class="font-body-lg text-on-surface-variant">Discover the essence of Pakistani heritage through our premium unstitched fabrics. From intricate threadwork to luxurious textures, each piece is a canvas for your personal style.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Sort By:</span>
+<select class="bg-transparent border-none border-b border-outline-variant font-label-caps text-label-caps py-1 focus:ring-0 cursor-pointer">
+<option>Newest Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Popularity</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Filter -->
+<aside class="w-full md:w-64 flex-shrink-0 space-y-10">
+<!-- Category Filter -->
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary border-b border-outline-variant pb-2">Category</h4>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none border-outline-variant checked:bg-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Lawn Collection</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none border-outline-variant checked:bg-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Silk Series</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none border-outline-variant checked:bg-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Embroidered Chiffon</span>
+</label>
+</div>
+</div>
+<!-- Price Range -->
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary border-b border-outline-variant pb-2">Price Range</h4>
+<div class="px-1">
+<input class="w-full h-1 bg-surface-container-high appearance-none cursor-pointer" max="25000" min="2000" type="range"/>
+<div class="flex justify-between mt-4 font-label-caps text-[10px] text-on-surface-variant">
+<span>PKR 2,000</span>
+<span>PKR 25,000+</span>
+</div>
+</div>
+</div>
+<!-- Size Selection -->
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary border-b border-outline-variant pb-2">Suit Length</h4>
+<div class="grid grid-cols-2 gap-2">
+<button class="border border-outline-variant py-2 font-label-caps text-[11px] hover:border-primary transition-colors">2.5 Meters</button>
+<button class="border border-primary py-2 font-label-caps text-[11px] bg-primary text-white">3.0 Meters</button>
+<button class="border border-outline-variant py-2 font-label-caps text-[11px] hover:border-primary transition-colors">3.5 Meters</button>
+<button class="border border-outline-variant py-2 font-label-caps text-[11px] hover:border-primary transition-colors">Full Suit</button>
+</div>
+</div>
+<!-- Color Palette -->
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary border-b border-outline-variant pb-2">Color</h4>
+<div class="flex flex-wrap gap-2">
+<div class="w-6 h-6 bg-[#2D2926] border border-outline-variant cursor-pointer" title="Ebony"></div>
+<div class="w-6 h-6 bg-[#F5F5DC] border border-outline-variant cursor-pointer" title="Cream"></div>
+<div class="w-6 h-6 bg-[#8B4513] border border-outline-variant cursor-pointer" title="Saddle Brown"></div>
+<div class="w-6 h-6 bg-[#E6BE8A] border border-outline-variant cursor-pointer" title="Antique Gold"></div>
+<div class="w-6 h-6 bg-[#4A5D23] border border-outline-variant cursor-pointer" title="Olive"></div>
+<div class="w-6 h-6 bg-[#722F37] border border-outline-variant cursor-pointer" title="Wine"></div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-16">
+<!-- Product Card Component -->
+<script>
+                        const products = [
+                            { id: 1, name: "Midnight Bloom Embroidered Lawn", price: "PKR 6,500", oldPrice: "PKR 8,200", badge: "SALE", image: "image-1" },
+                            { id: 2, name: "Antique Gold Tilla Jacquard", price: "PKR 12,000", badge: "NEW", image: "image-2" },
+                            { id: 3, name: "Ivory Grace Chiffon Suit", price: "PKR 9,500", image: "image-3" },
+                            { id: 4, name: "Rosewood Silk Collection", price: "PKR 15,800", oldPrice: "PKR 18,500", badge: "SALE", image: "image-4" },
+                            { id: 5, name: "Forest Green Karandi", price: "PKR 7,200", image: "image-5" },
+                            { id: 6, name: "Sapphire Blue Velvet Edition", price: "PKR 22,000", badge: "LIMITED", image: "image-6" },
+                            { id: 7, name: "Pearl White Cotton Net", price: "PKR 8,400", image: "image-7" },
+                            { id: 8, name: "Saffron Embroidered Organza", price: "PKR 11,200", oldPrice: "PKR 13,000", badge: "SALE", image: "image-8" },
+                            { id: 9, name: "Deep Maroon Cambric", price: "PKR 5,900", image: "image-9" },
+                            { id: 10, name: "Slate Grey Slub Lawn", price: "PKR 6,100", image: "image-10" },
+                            { id: 11, name: "Emerald Glaze Pure Silk", price: "PKR 19,500", badge: "BESTSELLER", image: "image-11" },
+                            { id: 12, name: "Champagne Tilla Festive", price: "PKR 14,300", oldPrice: "PKR 16,500", badge: "SALE", image: "image-12" }
+                        ];
+
+                        const productPrompts = [
+                            "A high-end editorial shot of a premium black unstitched fabric with intricate gold floral embroidery. The fabric is draped elegantly over a minimalist white marble pedestal in a bright, sunlit studio with soft shadows. The overall aesthetic is quiet luxury, emphasizing textile texture and heritage craftsmanship.",
+                            "A close-up fashion photography shot of ivory and gold jacquard fabric. The lighting is warm and cinematic, highlighting the metallic sheen of the Tilla threadwork. The scene is minimalist with a soft cream background, reflecting a modern Pakistani high-fashion aesthetic.",
+                            "Delicate ivory chiffon fabric with subtle silver beadwork, captured in a dreamy, high-key lighting environment. The fabric flows softly, creating elegant curves and shadows. Minimalist composition with a clean, light-mode background, evoking a sense of ethereal luxury.",
+                            "Rich rosewood-colored silk fabric with a smooth, lustrous finish. The fabric is styled in a contemporary editorial arrangement with sharp folds and soft draping. Minimalist studio setting with neutral tones and focused lighting on the fabric's sheen.",
+                            "Earthy forest green karandi fabric with rustic texture and tone-on-tone embroidery. Photographed in a natural light setting with a focus on the tactile quality of the weave. Clean, editorial layout with plenty of breathing room.",
+                            "Deep sapphire blue velvet with heavy gold zardozi work, presented in a dark-toned but clear luxury setting. High contrast lighting accentuates the richness of the velvet and the sparkle of the embroidery. Traditional luxury meets modern minimalism.",
+                            "Crisp pearl white cotton net fabric with delicate floral lace borders. Shot in a bright, airy studio with a minimalist aesthetic. The fabric looks fresh, breathable, and premium, perfect for high-end summer wear.",
+                            "Vibrant saffron organza with intricate multi-color embroidery. The fabric is semi-transparent, layered to show depth and detail. Editorial style photography with a soft-focus background and sharp detail on the embroidery.",
+                            "Classic deep maroon cambric fabric with minimalist white threadwork. The composition is clean and centered, emphasizing the quality of the base material and the precision of the stitching. High-end retail aesthetic.",
+                            "Modern slate grey slub lawn fabric with geometric patterns. The lighting is cool-toned and architectural, reflecting a contemporary urban take on traditional fabric. Minimalist and sleek presentation.",
+                            "Emerald green pure silk with a high-gloss finish, draped asymmetrically. The image captures the fluid movement of the silk. Bright, high-end gallery-style lighting with a focus on color vibrance.",
+                            "Champagne-toned festive fabric with delicate gold accents. The mood is celebratory yet refined, with soft-focus bokeh in the background suggesting a luxury event. Meticulous detail on the fabric's festive finish."
+                        ];
+
+                        document.write(products.map((p, index) => `
+                            <div class="group product-card-hover cursor-pointer overflow-hidden bg-white">
+                                <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low">
+                                    ${p.badge ? `<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-primary text-white font-label-caps text-[10px] tracking-widest">${p.badge}</span>` : ''}
+                                    <img src="https://images.unsplash.com/photo-${index + 1500000000000}?auto=format&fit=crop&w=800&q=80" 
+                                         class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
+                                         data-alt="${productPrompts[index]}">
+                                    <div class="product-action-bar absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm p-4 translate-y-full opacity-0 transition-all duration-300 flex justify-between items-center">
+                                        <button class="font-label-caps text-[11px] font-bold text-primary hover:tracking-widest transition-all">ADD TO CART</button>
+                                        <div class="flex gap-4">
+                                            <span class="material-symbols-outlined hover:text-secondary transition-colors">favorite</span>
+                                            <span class="material-symbols-outlined hover:text-secondary transition-colors">visibility</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center px-2">
+                                    <h3 class="font-body-md text-on-surface mb-2 group-hover:text-primary transition-colors">${p.name}</h3>
+                                    <div class="flex items-center justify-center gap-3">
+                                        ${p.oldPrice ? `<span class="font-body-md text-on-surface-variant line-through text-xs">${p.oldPrice}</span>` : ''}
+                                        <span class="font-label-caps text-label-caps font-bold text-secondary">${p.price}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join(''));
+                    </script>
+</div>
+<!-- Pagination -->
+<div class="mt-section-gap-sm flex items-center justify-center gap-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary disabled:opacity-30" disabled="">west</button>
+<div class="flex gap-4 font-label-caps text-label-caps">
+<span class="text-primary font-bold underline underline-offset-4">01</span>
+<span class="text-on-surface-variant hover:text-primary cursor-pointer">02</span>
+<span class="text-on-surface-variant hover:text-primary cursor-pointer">03</span>
+<span class="text-on-surface-variant">...</span>
+<span class="text-on-surface-variant hover:text-primary cursor-pointer">08</span>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary">east</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container mt-section-gap-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-sm max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h2 class="font-display-lg text-display-lg text-primary mb-6">Al-Huda</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Crafting elegance since 1994. Premium Pakistani textiles for the modern woman.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary">mail</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Shop</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Unstitched</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Ready-To-Wear</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Bridal Wear</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Sale Items</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Shipping Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Newsletter</h4>
+<p class="font-body-md text-on-surface-variant mb-4">Join our list for exclusive previews and offers.</p>
+<form class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full text-body-md" placeholder="Your email address" type="email"/>
+<button class="material-symbols-outlined" type="submit">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 px-margin-desktop py-8 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-caps text-[10px] text-on-surface-variant tracking-widest uppercase">© 2024 AL-HUDA FABRIC. ALL RIGHTS RESERVED.</span>
+<div class="flex gap-8 font-label-caps text-[10px] text-on-surface-variant tracking-widest uppercase">
+<a class="hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="hover:text-primary transition-colors" href="#">Store Locator</a>
+<a class="hover:text-primary transition-colors" href="#">Track Order</a>
+</div>
+</div>
+</footer>
+<!-- FAB for Quick Support (Contextual Suppression Logic: Hidden on Detail/Transactional) -->
+<button class="fixed bottom-8 right-8 bg-primary text-white w-14 h-14 rounded-none flex items-center justify-center hover:scale-110 transition-transform duration-300 z-40">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+<script>
+        // Simple micro-interaction for navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-4', 'shadow-sm');
+                header.classList.remove('py-6');
+            } else {
+                header.classList.add('py-6');
+                header.classList.remove('py-4', 'shadow-sm');
+            }
+        });
+
+        // Toggle mobile filters if needed (simple concept)
+        const sidebar = document.querySelector('aside');
+        // Logic could be added here for mobile filter drawer
+    </script>
+</body></html>

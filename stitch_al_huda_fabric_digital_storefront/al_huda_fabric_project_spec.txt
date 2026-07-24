@@ -1,0 +1,31 @@
+# Al-Huda Fabric - Frontend Specification
+
+## Project Overview
+A premium eCommerce platform for Al-Huda Fabric, specializing in Stitched, Unstitched, and Customized Pakistani suits.
+
+## Brand Identity
+- **Name:** Al-Huda Fabric
+- **Style:** Luxury minimal, fast-loading, light background.
+- **Colors:** White, Cream (#faf8f5), Black (#1a1a1a), Gold (#b8943f).
+- **Fonts:** Cormorant Garamond (Serif), Montserrat (Sans-serif).
+
+## Pages & Features
+1.  **Homepage:** Hero, Categories (Stitched, Unstitched, Customized), Featured Products, Custom Order CTA, Footer.
+2.  **Category Page:** Grid view with filters (Size, Price).
+3.  **Product Detail:** Gallery, Size Chart Modal, Add to Cart.
+4.  **Customized Suit Page:** Detailed measurement form + fabric selection.
+5.  **Cart:** Line items, totals.
+6.  **Checkout:** Customer info, COD/Online payment options.
+7.  **Order Confirmation:** Success message + summary.
+8.  **Gallery:** Masonry grid of lifestyle images.
+9.  **About Us:** Brand story.
+10. **FAQ:** Toggle-style questions.
+11. **Legal:** Privacy & Terms.
+12. **Auth:** Login / Register.
+
+## Key Components
+- Navbar: Search, Wishlist, Cart.
+- Product Card: Image, Name, Price, Sale Badge.
+- WhatsApp: Floating action button.
+- SEO: Meta tags on every page.
+- Tech: Next.js 14 structure, Tailwind CSS.

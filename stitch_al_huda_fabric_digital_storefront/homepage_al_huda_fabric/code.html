@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Al-Huda Fabric | Heritage Minimalist Textiles</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Montserrat:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-zoom {
+            animation: slowZoom 20s infinite alternate linear;
+        }
+        @keyframes slowZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e8e8e8",
+                      "tertiary-container": "#1b1c1a",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-background": "#1a1c1c",
+                      "on-primary-fixed-variant": "#474746",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-container": "#848481",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container-low": "#f3f3f4",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#f9f9f9",
+                      "inverse-on-surface": "#f0f1f1",
+                      "error": "#ba1a1a",
+                      "primary": "#000000",
+                      "on-surface-variant": "#444748",
+                      "on-primary-container": "#858383",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e2e2e2",
+                      "tertiary-fixed-dim": "#c8c6c4",
+                      "tertiary-fixed": "#e4e2df",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#2f3131",
+                      "on-surface": "#1a1c1c",
+                      "on-secondary-container": "#785a04",
+                      "on-secondary-fixed-variant": "#5b4300",
+                      "outline": "#747878",
+                      "outline-variant": "#c4c7c7",
+                      "primary-fixed": "#e5e2e1",
+                      "on-tertiary-fixed": "#1b1c1a",
+                      "surface-tint": "#5f5e5e",
+                      "surface": "#f9f9f9",
+                      "surface-variant": "#e2e2e2",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#1c1b1b",
+                      "tertiary": "#000000",
+                      "background": "#f9f9f9",
+                      "surface-dim": "#dadada",
+                      "surface-container": "#eeeeee",
+                      "on-tertiary-fixed-variant": "#474745",
+                      "secondary-fixed": "#ffdf9c",
+                      "primary-container": "#1c1b1b",
+                      "secondary-fixed-dim": "#e9c167",
+                      "on-secondary-fixed": "#251a00",
+                      "secondary-container": "#fed578",
+                      "secondary": "#785a03",
+                      "on-secondary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "section-gap-lg": "120px",
+                      "margin-desktop": "60px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "unit": "4px",
+                      "section-gap-sm": "60px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": ["EB Garamond"],
+                      "headline-md": ["EB Garamond"],
+                      "label-caps": ["Montserrat"],
+                      "body-md": ["Montserrat"],
+                      "display-lg": ["EB Garamond"],
+                      "button": ["Montserrat"],
+                      "headline-sm": ["EB Garamond"],
+                      "body-lg": ["Montserrat"]
+              },
+              "fontSize": {
+                      "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "button": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                      "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex-1 hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 transition-opacity duration-300 hover:opacity-80" href="#">Unstitched</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Ready-To-Wear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Bridal</a>
+</div>
+<div class="flex-none">
+<span class="font-display-lg text-display-lg tracking-tighter text-primary">Al-Huda Fabric</span>
+</div>
+<div class="flex-1 flex justify-end items-center gap-6">
+<div class="hidden md:flex gap-8 mr-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Luxury Pret</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80" href="#">Sale</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary scale-[0.99] transition-transform duration-200">favorite</button>
+<button class="material-symbols-outlined text-primary scale-[0.99] transition-transform duration-200">shopping_bag</button>
+<button class="material-symbols-outlined text-primary scale-[0.99] transition-transform duration-200">person</button>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="Summer Collection" class="w-full h-full object-cover hero-zoom" data-alt="A high-end editorial fashion shot featuring luxury embroidered fabric draped elegantly in a sun-drenched minimalist studio. The lighting is warm and soft, accentuating the fine textures of premium linen and silk in shades of cream and antique gold. The overall aesthetic is one of quiet luxury and heritage craftsmanship, maintaining a sophisticated minimalist palette with high-key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbeUh5KuSl1sum---1LLUbr0A-hZVjvJmYcnAjGeHSDJ1ZsQSPqCfEnQ6IS-Q6YIkwQuBdxDxNY4m2adofOuubHK2LdGqnq9ltETQKnQ2apCxaBgcjm9SMu4s2q8UUc1MIKi_IWz6-y5mdoB82D0xeQfKyk8-qR9EOUaxrHB-GcytaMHGLGZUkuYjLCaOH208zkbuDJyUoxOzwvUtrmFsVp9Q736vdP1UoIlukyGgNpouaH9T9kcHYuWxsoj0tgw3tGnY0NBmMMLc"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 text-center text-white px-margin-mobile">
+<span class="font-label-caps text-label-caps tracking-[0.3em] mb-6 block text-shadow-sm">SEASONAL EXCLUSIVE</span>
+<h1 class="font-display-lg text-display-lg md:text-[80px] leading-tight mb-8 text-shadow-sm">The Summer Collection</h1>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-primary text-on-primary font-button text-button px-12 py-4 hover:opacity-90 transition-all uppercase">Shop Now</button>
+<button class="border border-secondary text-secondary-container font-button text-button px-12 py-4 hover:bg-secondary/10 transition-all uppercase backdrop-blur-sm">Explore Lookbook</button>
+</div>
+</div>
+</section>
+<!-- Category Grid: Asymmetric Layout -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-section-gap-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+<!-- Unstitched (Large) -->
+<div class="md:col-span-7 relative group overflow-hidden h-[600px]">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="Detailed close-up of premium unstitched Pakistani fabric with intricate gold thread embroidery on a creamy white base. The fabric is folded neatly to showcase the texture and craftsmanship. The lighting is editorial and soft, highlighting the heritage minimalist style of Al-Huda Fabric. The background is a clean, neutral studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG0jShkKB39PMBa-tGX3doBW1dHpHcPVppB9iVsso0FbOmUNNwIingM76WScOFrFUN831JULtkswv9oeLNmV7XVhzsNQANfrCRZfvnpMS8mMkBifACPLFljMFrlnZMEjfW_8O1isxvP06Aojmrd65SB83QxGcuBknuZ3MvvZ6R77L1yb5U4XzSmoqnDieu-T87OGwVKPWsj1btOt81xwbgL_i8w2XAQIQo8oNFAhyuyYldsQ8ioplAB9S6GljUxAzDgwAfRVUGsR4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Unstitched</h3>
+<p class="font-label-caps text-label-caps opacity-90">Heritage Silks &amp; Cottons</p>
+<a class="inline-block mt-4 border-b border-white pb-1 font-button text-button uppercase hover:opacity-70 transition-opacity" href="#">Discover</a>
+</div>
+</div>
+<!-- Right Column (Stitched & Custom) -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<div class="relative group overflow-hidden h-[288px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern ready-to-wear stitched garment hanging against a minimalist off-white wall. The piece features contemporary silhouettes combined with traditional embroidery accents in gold. The lighting is crisp and modern, emphasizing the high-end boutique feel of the brand's luxury pret line." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfcVLwHi6_EyoQ01tjx9oNXr-UNKIizjtt-LU_6qf6F3SmSVPov_SnEcs7D2i1tWm_X-woeP3hpLoPxdKChXU-wbmr4Lx4K47xU1VuuDVgsbQYu-dG5eZub78kIcTX-tnS17jwO51Ay6hA3hQdj2Drws0p03HrG3VqNlb5hZ7l9aQzlW6EpVs_z_I0tV0oROZzM7iy1KbJCSa5r9Wqbjy9GjVWw1HN-ustDwRFRIkadYKWLX0WcvYAXpSfxN6g50SqD1ZmaxtPGZs"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+<h3 class="font-headline-sm text-headline-sm mb-1">Stitched</h3>
+<p class="font-label-caps text-label-caps">Ready-to-Wear</p>
+</div>
+</div>
+<div class="relative group overflow-hidden h-[288px] bg-secondary-container/10 border border-secondary/20 flex items-center justify-center p-10 text-center">
+<div class="z-10">
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" style="font-variation-settings: 'wght' 200;">straighten</span>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Customized Suits</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[250px] mx-auto mb-6">Bespoke tailoring services tailored to your unique measurements.</p>
+<button class="font-label-caps text-label-caps text-secondary border-b border-secondary pb-1 hover:opacity-70 transition-opacity">Book Appointment</button>
+</div>
+<div class="absolute top-0 right-0 opacity-5 pointer-events-none translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[300px]">pattern</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="bg-surface-container-lowest py-section-gap-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">THE CURATED EDIT</span>
+<h2 class="font-display-lg text-display-lg">Featured Arrivals</h2>
+</div>
+<a class="font-label-caps text-label-caps text-primary hover:underline transition-all" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-fashion product photography of a luxury unstitched suit fabric in a deep midnight blue with gold zari work. The fabric is arranged in elegant waves on a light grey stone surface. The lighting is directional and dramatic, highlighting the intricate patterns and premium quality of the textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWI-m2AkrEaNCuVwzwgbOLzYeaJ1x4XkPYVl9n1RCxxt4QsEMD-fgj03UvqYnLJPh9E3Dt1xQmwHjtvgp84O53XfHDXUQtN6oX7ChpbOKjmgc9o8XX37ya0GHawjGkILE3NXvXufGVT2eT3eEe5dG_RcZL2clC14rt-viRlBh5aDWbCSE8ZZSzP2n9A_RDHk2ImvgOiWSa75Wv54t_Ri_UNz77WMN3syfXBFnUTX3ljESSoJJNqriSMkXcKG3a1F3i71I7CK80PE"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">NEW ARRIVAL</div>
+<button class="absolute bottom-0 left-0 right-0 bg-secondary text-white font-button text-button py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">ADD TO CART</button>
+</div>
+<div class="text-center">
+<p class="font-body-md text-on-surface-variant mb-1">Celestial Silk Unstitched</p>
+<p class="font-body-md font-semibold text-primary">PKR 18,500</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Detailed shot of cream-colored linen fabric with delicate white floral embroidery. The composition is minimalist and artistic, emphasizing the tactile nature of the fabric. Soft natural light creates subtle shadows that define the texture. The aesthetic aligns with the heritage minimalist style of Al-Huda Fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIc5u1H-P0HYb_lrXMi-SSeZj6Pd1_Ocx2nYf2gUbD15Gf2QAx4ZRWLXj0pZZl0_VhAgIQsuTWXKcORk87J4CYSiY2au_8fdPBkpbGVeSPa6heWqCqHYt9mCkXnO-dokpvLN09fijXl-4x9sLnt5Bgowvrt9BaZWJUnGiSPlpojgpp7_1lFGJNr-gLBW8Sz2PtqMkCY6aqAjPBM4PhL2_DurVgUJc8F_KVa2D24nrruCIBs8aETafV-PVP7rHX3nlaLBFDtb0CT40"/>
+<button class="absolute bottom-0 left-0 right-0 bg-secondary text-white font-button text-button py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">ADD TO CART</button>
+</div>
+<div class="text-center">
+<p class="font-body-md text-on-surface-variant mb-1">Ivory Whisper Linen</p>
+<p class="font-body-md font-semibold text-primary">PKR 12,900</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial image of a premium ready-to-wear shirt in a soft pastel sage green. The garment features minimalist tailoring with traditional button detailing. Photographed in a bright, modern studio with high-key lighting that emphasizes the clean lines and quality stitching." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7DFsdZbU29gBdHokZDIqnac117YJJbMC70QGBQcJQ34FxD2Rkdc2FZYRUuaTphDhevRLlfHiuQ4wwAoNHUw3Vyae9MBxhcgn6p6hDAqoJ2jAQ1jA2O2gwEkkMfItTQ6u_havgaS8ikcG1ZRFywIjFvTu95U5ohqKe8zJl2shtW5hj3_ZFK1jnk3zNWtm_6qM5ehvgP2_Byig2yTAQwk1Y1owuvLzcr_FQlp1-m9YW_CTu3cv9hfFXUrJQt1xAb2kPdN6iAe3J2hw"/>
+<div class="absolute top-4 left-4 bg-secondary text-white font-label-caps text-[10px] px-3 py-1">LIMITED EDITION</div>
+<button class="absolute bottom-0 left-0 right-0 bg-secondary text-white font-button text-button py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">ADD TO CART</button>
+</div>
+<div class="text-center">
+<p class="font-body-md text-on-surface-variant mb-1">Sage Oasis Luxury Pret</p>
+<p class="font-body-md font-semibold text-primary">PKR 24,000</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of golden zari embroidery on a vibrant crimson red fabric. The focus is sharp on the intricate gold threads, showcasing the high-end craftsmanship of Al-Huda Fabric's bridal range. The lighting is warm and glamorous, creating a sense of luxury and tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxYPZuLnLMJb8_Fv9LtNVuequNMny3Ulnbz0rnVv4lGby3wDiDdtcMz6iLGHfC1DGBlD7Rpr-5LvR3onC2hTjRHQLgrVLTD2ePb1bsDxkkQOiLEyenbMIDPFnVf4r3fhJwtjtdu-dD2dOaroeel9Em7BrIJ812iYpsz5aF0srjrlfPEQkc-BoYoDrEFXHfpjtofeYXgXIkfEJdfCgIP-5of4eVmjMT6nvVWD7DIAy_hoCgZU6ZMazsP0sV7_S8Q6A-M5sqgWu1BAk"/>
+<button class="absolute bottom-0 left-0 right-0 bg-secondary text-white font-button text-button py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">ADD TO CART</button>
+</div>
+<div class="text-center">
+<p class="font-body-md text-on-surface-variant mb-1">Crimson Heritage Silk</p>
+<p class="font-body-md font-semibold text-primary">PKR 32,500</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Custom Order Banner -->
+<section class="max-w-container-max mx-auto px-margin-desktop pb-section-gap-lg">
+<div class="bg-surface-container-low flex flex-col md:flex-row items-center overflow-hidden">
+<div class="flex-1 p-12 md:p-20 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-secondary mb-6 block">BESPOKE SERVICES</span>
+<h2 class="font-display-lg text-display-lg mb-6">Crafted Specifically For You</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Experience the pinnacle of personalization with our signature bespoke stitching service. From delicate hand-embroidery to precision tailoring, we bring your vision to life.</p>
+<button class="bg-primary text-on-primary font-button text-button px-10 py-4 hover:bg-opacity-90 transition-all uppercase">Explore Stitching Options</button>
+</div>
+<div class="flex-1 h-[400px] md:h-[600px] order-1 md:order-2">
+<img class="w-full h-full object-cover" data-alt="A professional tailor's workspace in a minimalist heritage studio. An antique measuring tape and sharp scissors lie on a piece of high-quality silk fabric. The scene is illuminated by soft morning light, creating a quiet, focused atmosphere that emphasizes craft and quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEno7jVdr_hInegZhR0CDb6EZDY5hgSIfVHmpUW5efNQ7hLCW08SqsGA8hZrVRGN8_pzhBftd9CffG2LC8GIme_jd3uL5oRs8465vpkSdz0jHnI7Ju7TxhhapnqfJ3Pqk7jl8rhZmG4tjNMsC_GNdbv3uhNihXknZ0vi00SGqdoYsnktavsknxEDqrh3gGzhKFbTqTI0qWdJ5aX_Hl1195d9B8GkS-SF_YUtIR_OcZWGGQQEcKb_KZ7JIBkNxU6AF2Zlt8Ld0ziqw"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-sm max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<span class="font-display-lg text-display-lg text-primary">Al-Huda Fabric</span>
+<p class="font-body-md text-on-surface-variant">Elevating traditional Pakistani textiles with a commitment to minimalist luxury and artisanal excellence.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary font-semibold mb-8">SHOP</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Unstitched</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Ready-To-Wear</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Luxury Pret</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Bridal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary font-semibold mb-8">INFORMATION</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Shipping Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary font-semibold mb-8">NEWSLETTER</h4>
+<p class="font-body-md text-on-surface-variant mb-6">Join our circle for exclusive collection previews.</p>
+<form class="flex border-b border-primary pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full font-body-md px-0 placeholder:text-on-surface-variant/50" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined text-primary" type="submit">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/10 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-caps text-[10px] text-on-surface-variant">© 2024 AL-HUDA FABRIC. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">facebook</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">camera</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">music_note</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-10 right-10 z-[100] bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group" href="https://wa.me/yournumber" target="_blank">
+<svg class="bi bi-whatsapp" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.898 7.898 0 0 0-2.322-5.54zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+<span class="absolute right-full mr-4 bg-white text-primary font-label-caps text-[10px] px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-sm border border-outline-variant/10">CHAT WITH US</span>
+</a>
+</body></html>

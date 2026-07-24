@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Al-Huda Fabric | Luxury Unstitched Collections</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#1b1c1a",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#848481",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "primary": "#000000",
+                        "on-surface-variant": "#444748",
+                        "on-primary-container": "#858383",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c8c6c4",
+                        "tertiary-fixed": "#e4e2df",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-container": "#785a04",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "surface-tint": "#5f5e5e",
+                        "surface": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#1c1b1b",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "secondary-fixed": "#ffdf9c",
+                        "primary-container": "#1c1b1b",
+                        "secondary-fixed-dim": "#e9c167",
+                        "on-secondary-fixed": "#251a00",
+                        "secondary-container": "#fed578",
+                        "secondary": "#785a03",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "section-gap-lg": "120px",
+                        "margin-desktop": "60px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "4px",
+                        "section-gap-sm": "60px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "label-caps": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "display-lg": ["EB Garamond"],
+                        "button": ["Montserrat"],
+                        "headline-sm": ["EB Garamond"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "button": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .editorial-image-zoom:hover img {
+            transform: scale(1.05);
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-lowest fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex gap-8 items-center">
+<a class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-primary" href="#">Al-Huda Fabric</a>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80 active:scale-[0.99] transition-transform duration-200" href="#">Unstitched</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 active:scale-[0.99] transition-transform duration-200" href="#">Ready-To-Wear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80 active:scale-[0.99] transition-transform duration-200" href="#">Bridal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80 active:scale-[0.99] transition-transform duration-200" href="#">Luxury Pret</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 hover:opacity-80 active:scale-[0.99] transition-transform duration-200" href="#">Sale</a>
+</div>
+<div class="flex gap-6 items-center">
+<button class="material-symbols-outlined text-primary" data-icon="search">search</button>
+<button class="material-symbols-outlined text-primary" data-icon="favorite">favorite</button>
+<button class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-primary" data-icon="person">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center gap-2 text-on-surface-variant font-label-caps text-[10px] tracking-widest uppercase">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Ready-To-Wear</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary opacity-60">Zeb-un-Nisa Collection</span>
+</nav>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left: Image Gallery (Editorial Grid) -->
+<div class="lg:col-span-7 grid grid-cols-12 gap-4">
+<div class="col-span-2 space-y-4">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low cursor-pointer border border-primary/5 hover:border-primary/20 transition-colors">
+<img class="w-full h-full object-cover" data-alt="Close up detailed shot of intricate gold thread embroidery on a deep emerald green Pakistani silk fabric. The texture is rich and tactile, showcasing high-end craftsmanship in a minimalist studio setting with soft side lighting that highlights the shimmering metallic threads against a deep black shadow background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_3Nq85keLpJnptuLB-eYa2fiiH_O_SnJKy1FyF1aoZd5MnnkrtRWsGAbl9Q6eXnJivp648ACWfQC6cIuCSux2AmGM6oL-HpfDOc-mf-HzCyaJvPFu8qG39c28bo6W64A-t4HRbjiDRIH-yFFkRkP3-7yVFqjsiy0QW_BU4XaBqX1Sdqu0VPMK9yP2XepOSz5j8EVnGWrfuTjq8gfdpGvAInlsy3ULLikw8xWOXxQOHk2rbEYrC7EoWAldpExxfR3cTX3f1sNILz0"/>
+</div>
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low cursor-pointer border border-transparent">
+<img class="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" data-alt="A side profile view of a luxury Pakistani suit draped elegantly, focusing on the flow of the chiffon dupatta. The color palette is composed of soft creams and antique gold. The lighting is ethereal and high-key, creating a serene and premium atmosphere consistent with a minimalist fashion editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKo7ax_0x46iYQJAM0ZXJWsG9nbpuAd4_jI4MhgxnFK-ks0jDmqnvPT2h5f6QKkKnLjyQP3VLCopPpJOJx8m658iQ05-PASEufQvLvcmExIyBn2PYfbhXABslMOvzJX2sSpsPo6cnM3w0lv9rffo9rpP8HipuHFGISuTRdVpHnp6eghQa1duvJOltQjjT0rYWrhcn5XBY8D-um2a4UfGWTBInlMANbqU9-4nWkOZx1Nuifq83wgeH8x6aNQa95mNrz997CV5LAeU"/>
+</div>
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low cursor-pointer border border-transparent">
+<img class="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" data-alt="A top-down detailed shot of the sleeve cuff of a luxury garment, featuring delicate beadwork and lace trimmings. The setting is a bright, white minimalist studio with subtle grey shadows. The aesthetic is clean, sophisticated, and focused on the artisanal quality of the textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI1fj7afIuh0r_lQqci3en2o84ioIRoTX7B89tFpJQuBYa1sby28HqA2Gs_sDi8KU8Ov6JJuZArxSlM8nyvCq2mGzWx2_e_NnlGIQh18WfHT29hDUrXXDqOqa7r5TBZwP9HMQFArD0CQaJkX18xr0zY_57fulbiDos9o_hOQHoiGymh9iwhn-7hBppIULEstALvD6tp8QKuszSbRDb0Xo_FbWVuSEzkzp2w6clzwmjN1NsEBnmc24vBNwb1nI9qFJzVKLzytX4fKY"/>
+</div>
+</div>
+<div class="col-span-10 editorial-image-zoom overflow-hidden bg-surface-container-low aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-700" data-alt="Full length editorial shot of a model wearing a luxury emerald green Pakistani suit with heavy antique gold embroidery. She is standing in a minimalist contemporary space with large windows casting soft natural light. The composition is asymmetrical and high-fashion, emphasizing the silhouette and the heritage textile details." id="mainImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_E0Kszr3ZbkuYCrmBIvkDYLP01K19Jgwa678j8LJP-tZ-a5ETRgbS1Iyf9YY4CrBzvpk7xiihpXU5SSYkTGUZj4rJZc8mZ_Y6JPdj3Gd5dubuZwclRquiwXLrtJZYoquq9eSTBu-gwnw5jExLi9retGp0oXUwfRtWoGprLkNKnGmAcjZQoAJv6LS2mx97Dbm8Ot_52aFHHKYTIIV0APhyhVJHjhR3XEExvO6ThEImNFugAptYWbREvsLr-zvblSNfCaRPxEsXHEg"/>
+</div>
+</div>
+<!-- Right: Product Info -->
+<div class="lg:col-span-5 lg:pl-12 pt-8 lg:pt-0 sticky top-32">
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.2em] mb-4 block">NEW COLLECTION</span>
+<h1 class="font-headline-md text-headline-md text-primary mb-2 leading-tight">Emerald Heritage Zari Suit</h1>
+<p class="font-body-md text-on-surface-variant mb-6 opacity-70">SKU: AH-ZNB-2024-082</p>
+<div class="flex items-baseline gap-4 mb-8">
+<span class="font-headline-sm text-headline-sm text-primary">PKR 34,500</span>
+<span class="font-body-md text-on-surface-variant line-through opacity-50">PKR 42,000</span>
+</div>
+<div class="mb-8">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-caps text-label-caps uppercase text-primary">Select Size</span>
+<button class="font-label-caps text-[11px] text-secondary underline hover:text-primary transition-colors flex items-center gap-1" onclick="toggleModal('sizeChartModal')">
+<span class="material-symbols-outlined text-sm" data-icon="straighten">straighten</span> Size Chart
+                        </button>
+</div>
+<div class="flex gap-3">
+<button class="w-12 h-12 flex items-center justify-center border border-primary font-label-caps text-sm bg-primary text-on-primary">S</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant font-label-caps text-sm hover:border-primary transition-colors">M</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant font-label-caps text-sm hover:border-primary transition-colors">L</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant font-label-caps text-sm hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 mb-10">
+<button class="w-full py-5 bg-secondary text-on-primary font-label-caps text-label-caps tracking-widest hover:bg-secondary/90 transition-all active:scale-[0.98]">
+                        ADD TO CART
+                    </button>
+<button class="w-full py-5 border border-primary text-primary font-label-caps text-label-caps tracking-widest hover:bg-primary hover:text-on-primary transition-all active:scale-[0.98]">
+                        BUY IT NOW
+                    </button>
+</div>
+<!-- Product Details Tabs -->
+<div class="border-t border-outline-variant pt-6">
+<div class="flex gap-8 mb-6 border-b border-outline-variant/30">
+<button class="pb-2 font-label-caps text-[11px] text-primary border-b-2 border-primary transition-all" id="tab-btn-desc" onclick="switchTab('desc')">DESCRIPTION</button>
+<button class="pb-2 font-label-caps text-[11px] text-on-surface-variant border-b-2 border-transparent hover:text-primary transition-all" id="tab-btn-care" onclick="switchTab('care')">CARE</button>
+<button class="pb-2 font-label-caps text-[11px] text-on-surface-variant border-b-2 border-transparent hover:text-primary transition-all" id="tab-btn-ship" onclick="switchTab('ship')">SHIPPING</button>
+</div>
+<div class="tab-content active font-body-md text-on-surface-variant leading-relaxed" id="tab-desc">
+                        Exquisitely crafted from premium Italian silk, this deep emerald green ensemble features meticulous hand-embroidered zari and sequin work. The shirt is paired with a screen-printed organza dupatta and tailored raw silk trousers, embodying the essence of Pakistani heritage with a contemporary minimalist silhouette.
+                        <ul class="mt-4 space-y-2 list-disc pl-4 text-[13px]">
+<li>3-Piece Unstitched Suit</li>
+<li>Fabric: Pure Raw Silk &amp; Organza</li>
+<li>Embroidery: Hand-woven Gold Zari</li>
+<li>Color: Deep Emerald Green</li>
+</ul>
+</div>
+<div class="tab-content font-body-md text-on-surface-variant leading-relaxed" id="tab-care">
+                        To maintain the integrity of the delicate zari work and silk fabric:
+                        <ul class="mt-4 space-y-2 list-disc pl-4 text-[13px]">
+<li>Dry clean only.</li>
+<li>Do not bleach or use stain removers.</li>
+<li>Iron on low heat on the reverse side.</li>
+<li>Store in a garment bag away from direct sunlight.</li>
+</ul>
+</div>
+<div class="tab-content font-body-md text-on-surface-variant leading-relaxed" id="tab-ship">
+                        We offer premium worldwide shipping:
+                        <ul class="mt-4 space-y-2 list-disc pl-4 text-[13px]">
+<li>Domestic (Pakistan): 3-5 business days.</li>
+<li>International: 7-12 business days via DHL.</li>
+<li>Complimentary shipping on orders above PKR 50,000.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Products Section -->
+<section class="mt-section-gap-lg">
+<div class="flex justify-between items-end mb-12 border-b border-outline-variant/30 pb-4">
+<h2 class="font-headline-sm text-headline-sm text-primary uppercase tracking-wider">Complete the Look</h2>
+<a class="font-label-caps text-label-caps text-on-surface-variant border-b border-on-surface-variant pb-1 hover:text-primary hover:border-primary transition-all" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Related Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A model posing in a minimalist white studio wearing a soft pink embroidered lawn suit. The lighting is bright and airy, casting soft shadows. The overall mood is feminine and high-end, focusing on the delicate textures of the fabric against a clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmx19YYTa3teK7eRW8ZSiVTLnQAWSxFl9_DP_vB3ncd3WuIJ3tJwJe4_KRgipBblH8WTRYdYZN3D3KRjC6mE4AVO9lvlGDC3EIhODuJiYE6ssqWfi7Pf0zUYHm0Ylf-T67IC5kXWGlvtT3XdKHusCJi62g6LQ8Y2LbFN7ZHeH4SD35Kz5v9VX6eUtR3NfXhTWDqpSfg5rf8sL-YClVI1Vx9w3HkGWNqJ1mBU3N-38x79B68Ffeoj3wgwN9pdOI9n5dgFGtSL8fqLI"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[9px] px-3 py-1 tracking-widest">BESTSELLER</span>
+</div>
+<h3 class="font-body-md text-primary text-center group-hover:underline underline-offset-4">Rose Blush Organza</h3>
+<p class="font-label-caps text-center mt-1 text-on-surface-variant">PKR 28,900</p>
+</div>
+<!-- Related Product 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a luxury midnight blue velvet suit with silver kora dabka embroidery. The lighting is moody and dramatic, focusing on the deep pile of the velvet and the sparkle of the silver threads. A minimalist dark mode aesthetic that highlights texture and luxury craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8zpv615tXCg8M0UURgtd-WMoUfAqX3RlFYIbIiiBwat6MUgm35C0h8uIbwQo-WCQ6lNF2WaBQsXGjkI2lq47Rwthe-RNH17VEuYp0SvV8YeettFHPFdMg9zch2AlwOB23o65Ebr8GcqOaqpGU0McJTWOb9q08__byKL1n_C_k1RYwIznXFkUjWZorTZI_dpWtEOC_SCBJvRXJiQsD8qDmzprnAKs0y6CX_zDfzJ9xauWNHmW1S6UQIb3zp8CV2HFQWHMgSZaC4-w"/>
+</div>
+<h3 class="font-body-md text-primary text-center group-hover:underline underline-offset-4">Midnight Velvet Pret</h3>
+<p class="font-label-caps text-center mt-1 text-on-surface-variant">PKR 45,000</p>
+</div>
+<!-- Related Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist editorial setup featuring an ivory unstitched fabric draped over a sleek designer chair. The setting is a bright, modern penthouse with neutral tones and clean lines. The focus is on the purity of the textile and the high-end minimalist lifestyle it represents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLMT105bYi8o6nK5VBsGWvIKwc4DxHS-kklLXDLuIusJZN8D61dZMlSK_suAjoYfQISNsR9jZmM36nY9aRkdbMO8CvOJfXreciGCe79b88q8Rqe3ujhlSMjj_LY05VwC8U-JS0Q8cR_Ze41mqOteQkXflSXUiWYcLDEPX7zOnSaDl9kmzDSb79a2bbjMxExaDw_ZtSddgoipBs7rpr2LVwf5d7zJoWPMi3lqbKDG7K2R2wK4r1hMNYKBvvFebVWQEJbnE45Sv8P3Y"/>
+<span class="absolute top-4 left-4 bg-secondary text-on-primary font-label-caps text-[9px] px-3 py-1 tracking-widest">LIMITED</span>
+</div>
+<h3 class="font-body-md text-primary text-center group-hover:underline underline-offset-4">Ivory Silk Unstitched</h3>
+<p class="font-label-caps text-center mt-1 text-on-surface-variant">PKR 19,500</p>
+</div>
+<!-- Related Product 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An artistic shot of a sheer dupatta floating in the air against a beige textured wall. The fabric has subtle gold block print patterns. The lighting is soft and golden hour, creating a tactile and sensory experience of the lightweight material. Minimalist and refined fashion photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPPwrFWzMcGAnqUkB7MCzwZ_pG4vFFTmU1SJgLmYhAnU8PQHyBx-18PbP2bk-8oLBNKRzJWQte59qINo1sWFrfMTrrpTrqosi_C1rBxa8sYKsAbCjBGb2yTZqRJSRiLTUuMNZ7XD3etYP4Ksc2jK6HAHUH_RkT3ryly0I_P1hd_J1itVaEI-IVxZGjFZLNs1prAA6EBIcC5wG5Y8rww5zwUEdm3m4V7djohgUuq283aEEbD_mfHrXQvh4xA0K-yPcJ5EjkVfhZMrM"/>
+</div>
+<h3 class="font-body-md text-primary text-center group-hover:underline underline-offset-4">Golden Hour Chiffon</h3>
+<p class="font-label-caps text-center mt-1 text-on-surface-variant">PKR 12,000</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-sm max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<a class="font-display-lg text-display-lg text-primary dark:text-primary mb-6 block" href="#">Al-Huda</a>
+<p class="font-body-md text-on-surface-variant max-w-xs">Pioneering heritage textiles through a lens of modern minimalism since 1994.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">QUICK LINKS</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Shipping Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">CUSTOMER CARE</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">NEWSLETTER</h4>
+<p class="font-body-md text-on-surface-variant mb-4">Subscribe for exclusive access to new collections.</p>
+<div class="flex border-b border-primary py-2">
+<input class="bg-transparent border-none focus:ring-0 w-full font-body-md" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/20 max-w-container-max mx-auto">
+<p class="font-label-caps text-[10px] text-on-surface-variant tracking-widest">© 2024 AL-HUDA FABRIC. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Size Chart Modal -->
+<div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4" id="sizeChartModal">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm" onclick="toggleModal('sizeChartModal')"></div>
+<div class="bg-white relative w-full max-w-2xl p-8 md:p-12 shadow-2xl animate-in fade-in zoom-in duration-300">
+<button class="absolute top-4 right-4 material-symbols-outlined text-primary" data-icon="close" onclick="toggleModal('sizeChartModal')">close</button>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-8 text-center uppercase tracking-widest">Size Chart</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-sm border-collapse">
+<thead>
+<tr class="border-b border-primary/20">
+<th class="py-4 font-label-caps">SIZE</th>
+<th class="py-4 font-label-caps">SHOULDER</th>
+<th class="py-4 font-label-caps">CHEST</th>
+<th class="py-4 font-label-caps">LENGTH</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant">
+<tr class="border-b border-outline-variant/10">
+<td class="py-4 font-semibold text-primary">S</td>
+<td class="py-4">14"</td>
+<td class="py-4">19"</td>
+<td class="py-4">42"</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-4 font-semibold text-primary">M</td>
+<td class="py-4">15"</td>
+<td class="py-4">20.5"</td>
+<td class="py-4">43"</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-4 font-semibold text-primary">L</td>
+<td class="py-4">16"</td>
+<td class="py-4">22"</td>
+<td class="py-4">44"</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="mt-8 text-[11px] font-body-md text-on-surface-variant italic text-center">All measurements are in inches. Slight variations may occur due to hand-crafting process.</p>
+</div>
+</div>
+<script>
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function switchTab(tabId) {
+            // Update buttons
+            ['desc', 'care', 'ship'].forEach(id => {
+                const btn = document.getElementById(`tab-btn-${id}`);
+                const content = document.getElementById(`tab-${id}`);
+                
+                if (id === tabId) {
+                    btn.classList.add('text-primary', 'border-primary');
+                    btn.classList.remove('text-on-surface-variant', 'border-transparent');
+                    content.classList.add('active');
+                } else {
+                    btn.classList.remove('text-primary', 'border-primary');
+                    btn.classList.add('text-on-surface-variant', 'border-transparent');
+                    content.classList.remove('active');
+                }
+            });
+        }
+
+        // Image switcher logic
+        const thumbnails = document.querySelectorAll('.col-span-2 img');
+        const mainImage = document.getElementById('mainImage');
+        
+        thumbnails.forEach(thumb => {
+            thumb.parentElement.addEventListener('click', () => {
+                mainImage.src = thumb.src.replace('q=80&w=1000', 'q=80&w=2000');
+                
+                // Reset thumbnails
+                thumbnails.forEach(t => t.classList.add('opacity-60'));
+                thumb.classList.remove('opacity-60');
+                
+                // Visual feedback for main image update
+                mainImage.parentElement.style.opacity = '0.5';
+                setTimeout(() => {
+                    mainImage.parentElement.style.opacity = '1';
+                }, 150);
+            });
+        });
+    </script>
+</body></html>
