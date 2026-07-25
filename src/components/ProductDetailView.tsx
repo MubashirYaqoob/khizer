@@ -404,7 +404,7 @@ export default function ProductDetailView({ product, relatedProducts }: Props) {
             </div>
 
             <a
-              href={`https://wa.me/923172774216?text=Hi! I'm interested in ordering: ${product.name} ${
+              href={`https://wa.me/923493955066?text=Hi! I'm interested in ordering: ${product.name} ${
                 selectedSize ? `(Size: ${selectedSize})` : ""
               } — Rs. ${price.toLocaleString()}`}
               target="_blank"
