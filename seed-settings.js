@@ -5,7 +5,7 @@ async function main() {
   const defaults = [
     { key: "brand_story_title", value: "Crafted With Heritage" },
     { key: "brand_story_subtitle", value: "Our Legacy" },
-    { key: "brand_story_text", value: "At Al-Huda, we believe in preserving the intricate artistry of traditional Pakistani fashion. Every garment is a testament to our master weavers and artisans, bringing you timeless elegance tailored to perfection." },
+    { key: "brand_story_text", value: "At Khizar Fabric Store, we believe in preserving the intricate artistry of traditional Pakistani fashion. Every garment is a testament to our master weavers and artisans, bringing you timeless elegance tailored to perfection." },
     { key: "brand_story_image", value: "/images/about-story.png" },
   ];
 

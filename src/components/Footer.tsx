@@ -12,12 +12,12 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6">
               <Image 
                 src="/images/logo.jpg" 
-                alt="Khizer Fabric Store" 
+                alt="Khizar Fabric Store" 
                 width={56} 
                 height={56} 
                 className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-full"
               />
-              <h2 className="font-garamond text-3xl">Khizer Fabric Store</h2>
+              <h2 className="font-garamond text-3xl">Khizar Fabric Store</h2>
             </Link>
             <p className="text-body-md text-on-surface-variant mb-6 leading-relaxed">
               Elevating traditional Pakistani craftsmanship into contemporary luxury through meticulous fabric selection and minimalist design.

@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 export default function CanonicalTag() {
   const pathname = usePathname();
-  const baseUrl = 'https://www.khizarfabrics.pk';
+  const baseUrl = 'https://khizarfabricstore.store';
   const canonicalUrl = `${baseUrl}${pathname}`;
   return (
     <Head>

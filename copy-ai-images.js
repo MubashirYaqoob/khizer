@@ -4,7 +4,7 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 const artifactsDir = 'C:\\Users\\mubas\\.gemini\\antigravity-ide\\brain\\9711c85f-7583-41d6-91a6-1e4ef2af6516';
-const publicImagesDir = 'C:\\Users\\mubas\\Desktop\\alhuda\\public\\images';
+const publicImagesDir = 'C:\\Users\\mubas\\Desktop\\fabric\\kfs\\public\\images';
 
 const imageMapping = {
   'hero_banner_1_1781300324586.png': 'ai_hero_1.png',
