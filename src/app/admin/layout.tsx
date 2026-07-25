@@ -23,7 +23,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
   ];
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] bg-surface pt-10 px-6 max-w-container mx-auto">
+    <div className="flex flex-col md:flex-row min-h-[calc(100vh-80px)] bg-surface pt-6 md:pt-10 px-4 md:px-6 max-w-container mx-auto">
       {/* Sidebar */}
       <aside className="w-64 flex-shrink-0 pr-8 hidden md:block">
         <div className="sticky top-28 space-y-2">
