@@ -34,7 +34,9 @@ export const metadata: Metadata = {
     "Khizar Fabric Store — elevating traditional craftsmanship into contemporary luxury through meticulous fabric selection and design. Shop premium stitched, unstitched, and customized suits nationwide.",
   keywords: "Khizar Fabric Store, Pakistani suits, unstitched fabric, ready-to-wear, luxury pret, bridal wear, custom stitching, Pakistani clothing brand, KFS",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
