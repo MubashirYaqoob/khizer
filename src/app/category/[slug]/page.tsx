@@ -90,8 +90,8 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                   key={product.id}
                   id={product.id}
                   name={product.name}
-                  price={product.price}
-                  originalPrice={product.salePrice ?? undefined}
+                  price={product.salePrice || product.price}
+                  originalPrice={product.salePrice ? product.price : undefined}
                   image={product.images[0] || "/images/product-emerald.png"}
                   href={`/product/${product.id}`}
                   badge={product.isFeatured ? "NEW" : undefined}

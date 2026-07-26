@@ -73,8 +73,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                 key={product.id}
                 id={product.id}
                 name={product.name}
-                price={product.price}
-                originalPrice={product.salePrice ?? undefined}
+                price={product.salePrice || product.price}
+                originalPrice={product.salePrice ? product.price : undefined}
                 image={product.images[0] || "/images/placeholder.jpg"}
                 href={`/product/${product.id}`}
                 inStock={product.stock > 0}

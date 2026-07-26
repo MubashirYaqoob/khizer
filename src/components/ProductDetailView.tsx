@@ -624,8 +624,8 @@ export default function ProductDetailView({ product, relatedProducts }: Props) {
                   key={p.id}
                   id={p.id}
                   name={p.name}
-                  price={p.price}
-                  originalPrice={p.salePrice ?? undefined}
+                  price={p.salePrice || p.price}
+                  originalPrice={p.salePrice ? p.price : undefined}
                   image={p.images[0] || "/images/placeholder.jpg"}
                   href={`/product/${p.id}`}
                   inStock={p.stock > 0}
