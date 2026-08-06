@@ -249,7 +249,7 @@ export default function Navbar() {
           </div>
 
           {/* Search bar */}
-          <div className="flex-1 max-w-lg relative" ref={searchContainerRef}>
+          <div className="flex-1 min-w-0 max-w-lg relative" ref={searchContainerRef}>
             <form onSubmit={handleSearchSubmit} className="flex items-center bg-[#faf7f2] border border-[#E8E2D9] rounded-md overflow-hidden w-full transition-all focus-within:border-gold shadow-sm">
               <div className="relative">
                 <button
@@ -341,7 +341,7 @@ export default function Navbar() {
           </div>
 
           {/* Right section icons */}
-          <div className="flex items-center justify-end gap-3 md:gap-5 shrink-0">
+          <div className="flex items-center justify-end gap-3 md:gap-5 shrink-0 min-w-[44px]">
             <div className="hidden lg:flex flex-col items-end text-[10px] font-medium text-[#6B6560] border-r border-[#E8E2D9] pr-4 select-none">
               <span className="text-[8px] text-[#9A9590] uppercase font-bold tracking-widest">Deliver To / Currency</span>
               <div className="flex items-center gap-1 mt-0.5">
